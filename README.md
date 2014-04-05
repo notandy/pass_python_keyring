@@ -1,6 +1,10 @@
 pass backend for python keyring lib
 ===================================
 
+A pass-powered backend for Python Keyring Lib
+https://bitbucket.org/kang/python-keyring-lib
+http://www.zx2c4.com/projects/password-store/
+
 Installation
 ------------
 - put this directory somewhere
