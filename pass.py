@@ -16,7 +16,7 @@ class Keyring(KeyringBackend):
 
     def get_password(self, service, username):
         proc = Popen(['pass', 'show', '/'.join([service,username])],
-            stdin=None, stdout=PIPE)
+            stdin=None, stdout=PIPE, stderr=PIPE)
         password, _ = proc.communicate()
         proc.wait()
         if(proc.returncode == 0):
