@@ -11,7 +11,7 @@ setup(
     author='Andrew Karpow',
     author_email='andy@ndyk.de',
     keywords=['pass', 'password', 'keyring'],
-    scripts=['pass.py'],
+    py_modules=['pass.py'],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Console',
