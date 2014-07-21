@@ -15,4 +15,9 @@ Installation
 default-keyring=pass.Keyring
 keyring-path=/path/to/your/pass_python_keyring
 ```
-
+- Alternatively, install it with `python setup.py install`, and put the
+following in your *python_keyring/keyringrc.cfg* config:
+```
+[backend]
+default-keyring=pass.Keyring
+```
