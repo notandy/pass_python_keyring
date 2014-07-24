@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='pass_python_keyring',
-    version='20140710',
+    version='1.0',
     description=u"pass backend for python keyring lib",
     long_description=open('README.md').read(),
     url='http://github.com/notandy/pass_python_keyring',
