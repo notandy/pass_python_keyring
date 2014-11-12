@@ -21,3 +21,11 @@ following in your *python_keyring/keyringrc.cfg* config:
 [backend]
 default-keyring=pass.Keyring
 ```
+
+License
+-------
+
+The keyring library is licensed under both the
+[MIT](http://opensource.org/licenses/MIT) license 
+and the [PSF](https://docs.python.org/2/license.html) license.
+

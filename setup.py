@@ -4,12 +4,13 @@ from setuptools import setup
 
 setup(
     name='pass_python_keyring',
-    version='1.0',
+    version='1.1',
     description=u"pass backend for python keyring lib",
     long_description=open('README.md').read(),
     url='http://github.com/notandy/pass_python_keyring',
     author='Andrew Karpow',
     author_email='andy@ndyk.de',
+    license='PSF and MIT',
     keywords=['pass', 'password', 'keyring'],
     py_modules=['pass'],
     classifiers=[
