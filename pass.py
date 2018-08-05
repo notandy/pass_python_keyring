@@ -20,7 +20,7 @@ class Keyring(KeyringBackend):
         password, _ = proc.communicate()
         proc.wait()
         if(proc.returncode == 0):
-            return password.rstrip('\n')
+            return password.decode('utf-8').rstrip('\n')
         else:
             return None
 
