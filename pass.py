@@ -11,7 +11,7 @@ from subprocess import Popen, PIPE
 class Keyring(KeyringBackend):
     """Pass Keyring"""
 
-    def supported(self): 
+    def supported(self):
         return 0
 
     def get_password(self, service, username):
@@ -20,7 +20,7 @@ class Keyring(KeyringBackend):
         password, _ = proc.communicate()
         proc.wait()
         if(proc.returncode == 0):
-            return password.rstrip('\n')
+            return password.decode('utf-8').rstrip('\n')
         else:
             return None
 
@@ -32,6 +32,6 @@ class Keyring(KeyringBackend):
 
     def delete_password(self, service, username):
         proc = Popen(['pass', 'rm', '--force', '/'.join([service,username])])
-        proc.wait() 
+        proc.wait()
         if(proc.returncode != 0):
             raise PasswordDeleteError("Password not found")
